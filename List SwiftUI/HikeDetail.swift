@@ -10,16 +10,15 @@ import Foundation
 import SwiftUI
 
 struct HikeDetail: View {
-    
     let hike: Hike
-    
     var body: some View {
         VStack {
             Image(hike.imageURL)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             Text(hike.name)
-                .font(.largeTitle)
+                .font(.title)
+                .padding(.top, 60)
         }.navigationBarTitle(Text(hike.name), displayMode: .inline)
     }
 }

@@ -9,9 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     let hikes = Hike.getAll()
-    
     var body: some View {
         NavigationView {
             List(hikes) { hike in
